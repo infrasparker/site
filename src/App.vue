@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       color="primary"
     >
@@ -8,16 +8,9 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
 
-    </v-app-bar>
+    </v-app-bar> -->
 
-    <!-- <v-navigation-drawer
-      permanent
-      expand-on-hover
-    >
-    <v-list>Test</v-list>
-    <v-divider></v-divider>
-    <v-list>Test2</v-list>
-    </v-navigation-drawer> -->
+    <nav-drawer></nav-drawer>
 
     <v-content>
       <transition name="fade">
@@ -46,11 +39,15 @@
 </style>
 
 <script>
+import NavDrawer from '@/components/nav-drawer/NavDrawer.vue';
+
 export default {
   name: 'App',
-
   data: () => ({
     //
   }),
+  components: {
+    'nav-drawer': NavDrawer
+  }
 };
 </script>
