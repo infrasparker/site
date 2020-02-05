@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+    >
+      <v-btn text icon>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+
+    </v-app-bar>
+
+    <!-- <v-navigation-drawer
+      permanent
+      expand-on-hover
+    >
+    <v-list>Test</v-list>
+    <v-divider></v-divider>
+    <v-list>Test2</v-list>
+    </v-navigation-drawer> -->
+
+    <v-content>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </v-content>
+  </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+<style lang="scss" scoped>
+  @import '@/scss/font_vars.scss';
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .25s ease 0s;
   }
-}
-</script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .fade-leave-active {
+    transition: opacity .25s ease 0s;
+  }
+
+  .fade-enter, .fade-leave-active {
+    opacity: 0;
+  }
+
 </style>
+
+<script>
+export default {
+  name: 'App',
+
+  data: () => ({
+    //
+  }),
+};
+</script>

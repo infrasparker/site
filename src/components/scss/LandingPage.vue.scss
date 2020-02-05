@@ -1,0 +1,71 @@
+@import '@/scss/font_vars.scss';
+
+.show {
+    opacity: 1;
+}
+
+h1 {
+    font-family: $exo2;
+    font-size: 56px;
+    text-align: center;
+
+    &.fade-enter-active {
+        transition: all .5s ease .25s;
+    }
+
+    &.fade-enter {
+        opacity: 0;
+    }
+}
+
+h2 {
+    font-family: $khand;
+    font-size: 28px;
+    text-align: center;
+
+
+    &.fade-enter-active {
+        transition: all .5s ease .75s;
+    }
+
+    &.fade-enter {
+        opacity: 0;
+        scale: .75;
+    }
+}
+
+#github {
+    &.fade-enter-active {
+        transition: all .5s ease 1.2s;
+    }
+
+    &.fade-enter {
+        opacity: 0;
+        scale: .75;
+    }
+}
+
+#linkedin {
+
+    &.fade-enter-active {
+        transition: all .5s ease 1.3s;
+    }
+
+    &.fade-enter {
+        opacity: 0;
+        scale: .75;
+    }
+}
+
+#github, #linkedin {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+
+    text-decoration: none;
+}
+
+caption {
+    font-family: $jaldi;
+    font-size: 12px;
+}
