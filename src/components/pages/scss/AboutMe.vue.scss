@@ -1,0 +1,61 @@
+@import '@/scss/font_vars.scss';
+
+.container {
+    padding-top: 40px;
+
+    .v-card {
+        padding: 40px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-family: $exo2;
+        font-size: 32px;
+    }
+
+    p {
+        font-family: $jaldi;
+    }
+
+    #about-me {  
+        p {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+
+    #bio {
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: $jaldi;
+        }
+
+        p {
+            font-size: 16px;
+
+            margin-bottom: 8px;
+        }
+
+        .v-timeline::before {
+            left: calc(20% - 1px);
+        }
+
+        .timeline-item > :first-child {
+            max-width: calc(80% - 48px);
+        }
+
+        v-card-title {
+            font-family: $jaldi;
+            font-size: 24px;
+        }
+
+        .card-text {
+            font-family: $jaldi!important;
+            font-size: 15px;
+        }
+    }
+}
