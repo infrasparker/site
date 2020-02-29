@@ -1,0 +1,24 @@
+@import '@/scss/font_vars.scss';
+
+h2 {
+    text-align: center;
+}
+
+.v-card.link-ish {
+    padding: 40px 5%;
+    height: 100%;
+
+    cursor: pointer;
+
+    .img {
+        margin: 0 auto;
+    }
+
+    .title {
+        font-family: $jaldi;
+    }
+
+    .text {
+        font-family: $jaldi;
+    }
+}

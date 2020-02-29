@@ -9,6 +9,11 @@ export default Vue.extend({
                 title: 'About Me',
                 href: '/about-me'
             },
+            {
+                icon: 'mdi-folder-multiple',
+                title: 'Personal Projects',
+                href: '/projects'
+            }
         ]
     })
 })

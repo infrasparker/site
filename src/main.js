@@ -5,13 +5,27 @@ import VueRouter from 'vue-router';
 
 import LandingPage from '@/components/pages/LandingPage';
 import AboutMe from '@/components/pages/AboutMe';
+import Projects from '@/components/pages/Projects';
+
+import '@/scss/font_vars.scss';
+import '@/scss/global_styles.scss';
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 const routes = [
-  { path: '/', component: LandingPage},
-  { path: '/about-me', component: AboutMe},
+  {
+    path: '/',
+    component: LandingPage
+  },
+  {
+    path: '/about-me',
+    component: AboutMe
+  },
+  {
+    path: '/projects',
+    component: Projects
+  },
 ]
 
 const router = new VueRouter({

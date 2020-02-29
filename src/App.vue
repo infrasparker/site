@@ -25,11 +25,11 @@
   @import '@/scss/font_vars.scss';
 
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .25s ease 0s;
+    transition: opacity .1s ease .1s;
   }
 
   .fade-leave-active {
-    transition: opacity .25s ease 0s;
+    transition: opacity .1s ease 0s;
   }
 
   .fade-enter, .fade-leave-active {

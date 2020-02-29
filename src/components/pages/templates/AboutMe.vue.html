@@ -3,20 +3,19 @@
             <v-col cols="3">
                 <v-img
                     alt="profile picture"
-                    src="~@/assets/profile.png"
-                    aspect-ratio="1"
+                    src="@/assets/profile.png"
                 >
                 </v-img>
             </v-col>
             <v-col cols="auto">
-                <h2>About Me</h2>
+                <h2 class="title-secondary">About Me</h2>
                 <p v-for="line in aboutMe" v-text="line"></p>
             </v-col>
         </v-row>
     </v-card>
     <v-row id="bio" justify="center">
         <v-col cols="12">
-            <h2>Bio</h2>
+            <h2 class="title-secondary">Bio</h2>
         </v-col>
         <v-col cols="12">
             <v-timeline>

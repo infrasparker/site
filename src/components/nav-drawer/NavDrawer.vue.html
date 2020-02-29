@@ -5,14 +5,14 @@
 >
     <v-list>
         <v-divider></v-divider>
-        <v-list-item link v-for="item in items" to="/">
+        <v-list-item link to="/">
             <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Landing Page</v-list-item-title>
         </v-list-item>
         <v-divider></v-divider>
-        <v-list-item link v-for="item in items" :to="item.href">
+        <v-list-item link v-for="(item, i) in items" :key="i" :to="item.href">
             <v-list-item-icon>
                 <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
