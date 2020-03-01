@@ -1,3 +1,4 @@
+<template>
 <v-container fill-height fluid>
     <v-row align="center" justify="center">
         <v-col cols="12">
@@ -30,3 +31,8 @@
         </transition>
     </v-row>
 </v-container>
+</template>
+
+<style lang="scss" scoped src="@/components/pages/scss/LandingPage.vue.scss"></style>
+
+<script lang="ts" src="@/components/pages/ts/LandingPage.vue.ts"></script>

@@ -1,4 +1,6 @@
+<template>
 <v-container fluid>
+    <v-card>
         <v-row id="about-me" justify="space-around" align="center">
             <v-col cols="3">
                 <v-img
@@ -9,7 +11,7 @@
             </v-col>
             <v-col cols="auto">
                 <h2 class="title-secondary">About Me</h2>
-                <p v-for="line in aboutMe" v-text="line"></p>
+                <p v-for="(line, i) in aboutMe" :key="i" v-text="line"></p>
             </v-col>
         </v-row>
     </v-card>
@@ -21,7 +23,7 @@
             <v-timeline>
                 <v-timeline-item
                     v-for="(item, i) in bio"
-                    :key="item.i"
+                    :key="i"
                     right
                     small
                     fill-dot
@@ -37,3 +39,8 @@
         </v-col>
     </v-row>
 </v-container>
+</template>
+
+<style lang="scss" scoped src="@/components/pages/scss/AboutMe.vue.scss"></style>
+
+<script lang="ts" src="@/components/pages/ts/AboutMe.vue.ts"></script>

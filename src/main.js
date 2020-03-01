@@ -3,9 +3,9 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router';
 
-import LandingPage from '@/components/pages/LandingPage';
-import AboutMe from '@/components/pages/AboutMe';
-import Projects from '@/components/pages/Projects';
+import LandingPage from '@/components/pages/templates/LandingPage';
+import AboutMe from '@/components/pages/templates/AboutMe';
+import Projects from '@/components/pages/templates/Projects';
 
 import '@/scss/font_vars.scss';
 import '@/scss/global_styles.scss';
