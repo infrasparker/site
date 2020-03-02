@@ -3,11 +3,11 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router';
 
-import LandingPage from '@/components/pages/templates/LandingPage';
-import AboutMe from '@/components/pages/templates/AboutMe';
-import Projects from '@/components/pages/templates/Projects';
+import LandingPage from '@/components/pages/landing-page/LandingPage';
+import AboutMe from '@/components/pages/about-me/AboutMe';
+import Projects from '@/components/pages/projects/Projects';
 
-import '@/scss/font_vars.scss';
+// import '@/scss/font_vars.scss';
 import '@/scss/global_styles.scss';
 
 Vue.config.productionTip = false;

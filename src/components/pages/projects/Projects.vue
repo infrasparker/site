@@ -25,6 +25,6 @@
     </v-container>
 </template>
 
-<style lang="scss" scoped src="@/components/pages/scss/Projects.vue.scss"></style>
+<style lang="scss" scoped src="./Projects.vue.scss"></style>
 
-<script lang="ts" src="@/components/pages/ts/Projects.vue.ts"></script>
+<script lang="ts" src="./Projects.vue.ts"></script>

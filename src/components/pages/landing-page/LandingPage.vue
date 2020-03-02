@@ -33,6 +33,6 @@
 </v-container>
 </template>
 
-<style lang="scss" scoped src="@/components/pages/scss/LandingPage.vue.scss"></style>
+<style lang="scss" scoped src="./LandingPage.vue.scss"></style>
 
-<script lang="ts" src="@/components/pages/ts/LandingPage.vue.ts"></script>
+<script lang="ts" src="./LandingPage.vue.ts"></script>

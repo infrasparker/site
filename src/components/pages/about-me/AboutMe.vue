@@ -41,6 +41,6 @@
 </v-container>
 </template>
 
-<style lang="scss" scoped src="@/components/pages/scss/AboutMe.vue.scss"></style>
+<style lang="scss" scoped src="./AboutMe.vue.scss"></style>
 
-<script lang="ts" src="@/components/pages/ts/AboutMe.vue.ts"></script>
+<script lang="ts" src="./AboutMe.vue.ts"></script>
