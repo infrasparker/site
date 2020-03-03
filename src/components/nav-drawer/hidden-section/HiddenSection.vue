@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div v-if="show">
+    <div v-if="$store.experimental">
         <div v-for="(section, i) in panel" :key="i">
             <v-list-item v-for="(item, j) in section" :key="j" :to="item.href">
                 <v-list-item-icon>
@@ -13,7 +13,7 @@
     </div>
 
     <v-dialog
-        v-if="!show"
+        v-if="!$store.experimental"
         v-model="dialog"
         max-width="600"
         v-on:click:outside="reset()"

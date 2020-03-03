@@ -31,7 +31,6 @@
                 >
                     <span slot="opposite" v-text="item.heading"></span>
                     <v-card>
-                        <!-- <v-card-title v-text="item.heading"></v-card-title> -->
                         <v-card-text class="card-text" v-text="item.text"></v-card-text>
                     </v-card>
                 </v-timeline-item>

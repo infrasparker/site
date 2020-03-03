@@ -1,0 +1,23 @@
+@import '@/scss/font_vars.scss';
+
+.container {
+    h3.location {
+        font-family: $jaldi;
+    }
+    
+    .temperature {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1;
+
+        &.celsius {
+            color: yellow;
+
+            margin-bottom: 12px;
+        }
+
+        &.fahreinheit {
+            color: orange;
+        }
+    }
+}

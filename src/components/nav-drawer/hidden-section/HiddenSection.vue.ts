@@ -7,18 +7,12 @@ export default Vue.extend({
             dialog: false,
             expose: false,
             password: null,
-            show: false,
             panel: [
                 [
                     {
-                        icon: 'mdi-account',
-                        title: 'About Me',
-                        href: '/about-me'
-                    },
-                    {
-                        icon: 'mdi-folder-multiple',
-                        title: 'Personal Projects',
-                        href: '/projects'
+                        icon: 'mdi-cloud',
+                        title: 'Weather',
+                        href: '/weather'
                     }
                 ]
             ]
@@ -27,12 +21,11 @@ export default Vue.extend({
     methods: {
         submit: function() {
             if (this.password === process.env.VUE_APP_EXPERIMENTAL_PASSWORD) {
-                this.show = true;
+                this.$store.experimental = true;
             } else {
                 this.reset();
             }
             this.dialog = false;
-            console.log(this.show);
         },
         reset: function() {
             this.password = null;
